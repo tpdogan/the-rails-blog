@@ -1,4 +1,10 @@
 <h1><%= @article.title %></h1>
 <p class = article_body ><%= @article.body %> </p>
 <%= link_to "Back to articles", articles_path, class: "back_to_articles" %>
-<%= link_to "Delete article", article_path(@article), method: :delete %>
+<br /><br />
+<%= link_to "Edit this article", edit_article_path(@article),
+  class: "edit_article" %>
+<br /><br />
+<%= link_to "Delete article", article_path(@article), method: :delete,
+  data: {confirm: "Are you sure you want to delete '#{@article.title}'?"},
+  class: "delete_article" %>

@@ -8,4 +8,10 @@ h1
 .new_article
   {color: rgb(231, 140, 140);}
 .back_to_articles
-  {color: brown;}
+  {color: rgb(177, 86, 171);}
+.edit_article
+  {color: rgb(139, 63, 137);}
+.edit_article:visited
+  {color: rgb(136, 62, 133);}
+.edit_article
+  {color: rgb(72, 35, 77);}

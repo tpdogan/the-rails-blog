@@ -15,19 +15,17 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
     @article.save
     redirect_to article_path(@article)
-=begin
-    @article = Article.new(article_params)
+  end
 
-    if @article.save
-      flash[:success] = "New article is successfully created."
-      format.html { redirect_to article_path(@article) }
-      format.json { render :show, status: :created, location: @article}
-    else
-      flash[:error] = "Not all fields are filled."
-      format.html { render :new }
-      format.json { render json: @article.errors, status: :unprocessable_entity}
-    end
-=end
+  def edit
+    @article = Article.find(params[:id])
+  end
+
+  def update
+    @article = Article.find(params[:id])
+    @article.update(article_params)
+    flash.notice = "Article #{@article.title} is successfully updated."
+    redirect_to article_path(@article)
   end
 
   def destroy
