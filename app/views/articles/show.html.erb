@@ -1,5 +1,12 @@
 <h1><%= @article.title %></h1>
 <p class = article_body ><%= @article.body %> </p>
+<p>
+  Tags:
+  <% @article.tags.each do |tag| %>
+    <%= link_to tag.name, tag_path(tag) %>
+  <% end %>
+</p>
+
 <%= link_to "Back to articles", articles_path, class: "back_to_articles" %>
 <br /><br />
 <%= link_to "Edit this article", edit_article_path(@article),
