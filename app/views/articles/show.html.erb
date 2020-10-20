@@ -1,7 +1,7 @@
 <h1><%= @article.title %></h1>
 <p class = article_body ><%= @article.body %> </p>
 <p>
-  Tags:
+  <%= link_to "Tags: ", tags_path %>
   <% @article.tags.each do |tag| %>
     <%= link_to tag.name, tag_path(tag) %>
   <% end %>
