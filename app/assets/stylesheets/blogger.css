@@ -1,0 +1,12 @@
+h1
+  {font-family: 'Ubuntu','Segoe UI', Verdana, sans-serif;}
+.article_title
+  {font-family: 'Ubuntu','Segoe UI', Verdana, sans-serif;
+  color: rgb(136, 168, 105);}
+.article_body
+  {font-family: 'Ubuntu','Segoe UI', Verdana, sans-serif;
+  color: rgb(45, 107, 87);}
+.new_article
+  {color: rgb(231, 140, 140);}
+.back_to_articles
+  {color: brown;}
