@@ -8,3 +8,7 @@
 <%= link_to "Delete article", article_path(@article), method: :delete,
   data: {confirm: "Are you sure you want to delete '#{@article.title}'?"},
   class: "delete_article" %>
+
+<h3>Comments (<%= @article.comments.size %>)</h3>
+<%= render partial: 'comment', collection: @article.comments %>
+<%= render partial: 'comments/form' %>

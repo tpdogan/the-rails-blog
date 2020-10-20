@@ -15,3 +15,6 @@ h1
   {color: rgb(136, 62, 133);}
 .edit_article
   {color: rgb(72, 35, 77);}
+.comment_div
+  {width: 200px; height: 100px; color: white;
+  background-color: rgb(163, 116, 116); border: 3px solid black;}
