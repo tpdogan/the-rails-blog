@@ -1,0 +1,10 @@
+<h1>All Articles</h1>
+
+<ul id = "listedArticles">
+  <% @articles.each do |article| %>
+  <li>
+    <%# original is just article.title %>
+    <%= link_to article.title %>
+  </li>
+  <% end %>
+</ul>
